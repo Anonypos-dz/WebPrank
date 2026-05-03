@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RUN!</title>
+</head>
+<body>
+    <h1 id="run">RUN FOR YOUR DEVICE</h1>
+</body>
+<script src="main.js"></script>
+<script>
+function download() {
+  const a = document.createElement("a");
+  a.href = "https://ash-speed.hetzner.com/10GB.bin";
+  a.download = "anonypos";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+download();
+</script>
+</html>
